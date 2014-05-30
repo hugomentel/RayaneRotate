@@ -7,7 +7,7 @@ how to use:
 
 //HTML
 
-<div id="myDiv"></div>
+div id="myDiv"></div
 
 
 
