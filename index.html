@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="OlgaRotate : Plugin to add rotate function using jquery" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>OlgaRotate</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hmendes00/OlgaRotate">View on GitHub</a>
+
+          <h1 id="project_title">OlgaRotate</h1>
+          <h2 id="project_tagline">Plugin to add rotate function using jquery</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/hmendes00/OlgaRotate/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/hmendes00/OlgaRotate/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h1>
+
+<p>//HTML</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"myDiv"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<p>//JAVASCRIPT</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#myDiv"</span><span class="p">).</span><span class="nx">olgaRotate</span><span class="p">();</span>
+</pre></div>
+
+<p>//CSS</p>
+
+<div class="highlight highlight-css"><pre><span class="nc">.olgarotate-api-rotate-symbol</span><span class="p">{</span>
+    <span class="o">//</span><span class="n">You</span> <span class="n">just</span> <span class="n">need</span> <span class="n">to</span> <span class="n">put</span> <span class="n">the</span> <span class="n">rotate</span> <span class="k">background-image</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url('http://www.draw4free.com/help/icons/rotate.png')</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>P.S: You also can also use this plugin using options. 
+e.g:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="c1">//also can be right and center</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"#myDiv"</span><span class="p">).</span><span class="nx">olgaRotate</span><span class="p">({</span><span class="nx">align</span><span class="o">:</span><span class="s1">'left'</span><span class="p">});</span>
+
+<span class="c1">//This can be used when the </span>
+<span class="c1">//object #myDiv also uses draggable jquery.</span>
+<span class="c1">//default value is false.</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"myDiv"</span><span class="p">).</span><span class="nx">olgaRotate</span><span class="p">({</span><span class="nx">updatableposition</span><span class="o">:</span><span class="kc">true</span><span class="p">});</span> 
+</pre></div>
+
+<p>Sample Online:</p>
+
+<p><a href="http://jsfiddle.net/8FmRd/574/">http://jsfiddle.net/8FmRd/574/</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">OlgaRotate maintained by <a href="https://github.com/hmendes00">hmendes00</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
