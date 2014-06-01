@@ -34,7 +34,7 @@ $("myDiv").olgaRotate({updatableposition:true}); //default false. This can be us
 
 Sample Online:
 
-http://jsfiddle.net/8FmRd/574/
+http://jsfiddle.net/8FmRd/575/
 
 
 
