@@ -2,7 +2,7 @@
 //author: Hugo S. Mendes
 
 (function ( $ ) {
-    $.fn.olgaRotate = function(options) {
+    $.fn.rayaneRotate = function(options) {
         var timeout, clicker = $(this);
         var hold = false;
         var lastY = 0, lastX = 0;
@@ -15,7 +15,7 @@
             align: 'right'
         }, options );
         
-        clicker.attr("data-olgarotate-api-angle", "0");
+        clicker.attr("data-rayanerotate-api-angle", "0");
         var handler = document.createElement('div');
         $(handler).css("position", "absolute");
         $(handler).css("height", "20px");
@@ -32,7 +32,7 @@
                     $(handler).css("left", (clicker.width()/2)+"px");break;
         }
         
-        $(handler).addClass("olgarotate-api-rotate-symbol");
+        $(handler).addClass("rayanerotate-api-rotate-symbol");
         clicker.append(handler);
         $(handler).mousedown(function(){
             if(settings.updatableposition){
@@ -48,8 +48,8 @@
                 timeout = setInterval(function(){
                     if(mousemoving){
                         var _angle = getAngle(window.mouseX, window.mouseY);
-                        if(clicker.attr("data-olgarotate-api-angle") != _angle){
-                            clicker.attr("data-olgarotate-api-angle", _angle);
+                        if(clicker.attr("data-rayanerotate-api-angle") != _angle){
+                            clicker.attr("data-rayanerotate-api-angle", _angle);
                             addAngleToObject(_angle);
                         }
                     }
